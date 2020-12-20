@@ -1,1 +1,221 @@
-<p>nav-bar works!</p>
+<nav
+  class="navbar navbar-expand-lg navbar-dark"
+  [ngStyle]="{ 'background-color': theme.col1 }"
+>
+  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+  <a class="navbar-brand" href="#">
+    <img
+      src="../../../../favicon.ico"
+      width="30"
+      height="30"
+      class="d-inline-block align-top"
+      alt=""
+      loading="lazy"
+    />
+    Sassoon
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"
+          >Home <span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          routerLinkActive
+        >
+          About Us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" routerLink="/about-us/deans">Deans</a>
+          <a class="dropdown-item" routerLink="/about-us/organogram"
+            >Organogram</a
+          >
+          <a class="dropdown-item" routerLink="/about-us/history">History</a>
+          <a class="dropdown-item" routerLink="/about-us/committee"
+            >Committee</a
+          >
+          <a class="dropdown-item" routerLink="/about-us/university"
+            >University</a
+          >
+          <a class="dropdown-item" routerLink="/about-us/recognition"
+            >Recognition</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          routerLinkActive
+        >
+          Admissions
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" routerLink="/admissions/ug-students"
+            >UG Students</a
+          >
+          <a class="dropdown-item" routerLink="/admissions/pg-students"
+            >PG Students</a
+          >
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/hospital" routerLinkActive>Hospital</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/departments" routerLinkActive
+          >Departments</a
+        >
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          routerLinkActive
+        >
+          Resources
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" routerLink="/resources/journals">Journals</a>
+          <a class="dropdown-item" routerLink="/resources/videos-and-ppt"
+            >Videos and PPTs</a
+          >
+          <a class="dropdown-item" routerLink="/resources/research-society"
+            >Research Society</a
+          >
+          <a class="dropdown-item" routerLink="/resources/archives">Archives</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          routerLinkActive
+        >
+          Students' Corner
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" routerLink="/students-corner/results"
+            >Results</a
+          >
+          <a class="dropdown-item" routerLink="/students-corner/hostel"
+            >Hostel</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          routerLinkActive
+        >
+          Academics
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" routerLink="/academics/activities"
+            >Activities</a
+          >
+          <a
+            class="dropdown-item"
+            routerLink="/academics/awards-and-achievements"
+            >Awards and Achievements</a
+          >
+          <a class="dropdown-item" routerLink="/academics/research-publications"
+            >Research Publications</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          routerLinkActive
+        >
+          Staff
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" routerLink="/about-us/teaching">Teaching</a>
+          <a class="dropdown-item" routerLink="/about-us/non-teaching"
+            >Non-Teaching</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <img
+            src="../../../../assets/icons/theme-switch.svg"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+            loading="lazy"
+          />
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" (click)="changeTheme('cleanAndEnergetic')">
+            Clean and Energetic colors
+          </a>
+          <a class="dropdown-item" (click)="changeTheme('blueAndRefreshing')"
+            >Blue and Refreshing</a
+          >
+          <a class="dropdown-item" (click)="changeTheme('vividBluesAndOrange')"
+            >Vivid Blues and Orange</a
+          >
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
