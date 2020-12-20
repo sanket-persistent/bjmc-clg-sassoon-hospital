@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import colorScheme from "src/app/interfaces/ColorScheme";
+import { ThemeChangerService } from "src/app/services/theme-changer.service";
 
 @Component({
-  selector: 'app-teaching-staff',
-  templateUrl: './teaching-staff.component.html',
-  styleUrls: ['./teaching-staff.component.css']
+  selector: "app-teaching-staff",
+  templateUrl: "./teaching-staff.component.html",
+  styleUrls: ["./teaching-staff.component.css"],
 })
 export class TeachingStaffComponent implements OnInit {
+  theme: colorScheme;
 
-  constructor() { }
+  constructor(private themeChanger: ThemeChangerService) {}
 
   ngOnInit(): void {
+    this.themeChanger.subscribeToTheme().subscribe((currentTheme) => {
+      this.theme = currentTheme;
+    });
   }
-
 }
